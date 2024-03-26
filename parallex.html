@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      .slide{
+        width: 100vw;
+        height: 100vh;
+      }
+      .wrapper{
+        display: flex;
+        flex-direction: row;
+        width: 400vw;
+        transform: rotate(90deg) translateY(-100vh);
+        transform-origin:top left;
+      }
+      .one{
+        background-color:lightblue ;
+      }
+      .two{
+        background-color:lightgreen ;
+      }
+      .three{
+        background-color:lightyellow ;
+      }
+      .four{
+        background-color:pink ;
+      }
+      .outer-wrapper{
+        width: 100v;
+        height: 100vw;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin:top left;
+        overflow-y:scroll;        
+        overflow-x:hidden;        
+        position: absolute;
+
+      }
+
+     
+    </style>
+</head>
+
+<body>
+  <div class="outer-wrapper">
+    <div class="wrapper">
+     <div class="slide one"></div>
+     <div class="slide two"></div>
+     <div class="slide three"></div>
+     <div class="slide four"></div>
+    </div> 
+   </div>
+</body>
+</html>
